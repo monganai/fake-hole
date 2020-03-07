@@ -9,7 +9,7 @@ def passResponse():
 
 @app.route("/no_status/admin/api.php")
 def no_status():
-    dict = '{"domains_being_blocked":125230,"dns_queries_today":13322,"ads_blocked_today":5490,"ads_percentage_today":41.21003,"unique_domains":928,"queries_forwarded":6702,"queries_cached":1130,"clients_ever_seen":4,"unique_clients":4,"dns_queries_all_types":13322,"reply_NODATA":12,"reply_NXDOMAIN":15,"reply_CNAME":173,"reply_IP":317,"privacy_level":0,}'
+    dict = '{"domains_being_blocked":125230,"dns_queries_today":13322,"ads_blocked_today":5490,"ads_percentage_today":41.21003,"unique_domains":928,"queries_forwarded":6702,"queries_cached":1130,"clients_ever_seen":4,"unique_clients":4,"dns_queries_all_types":13322,"reply_NODATA":12,"reply_NXDOMAIN":15,"reply_CNAME":173,"reply_IP":317,"privacy_level":0}'
     return Response(dict, status=200)
 
 @app.route("/bad_status/admin/api.php")
